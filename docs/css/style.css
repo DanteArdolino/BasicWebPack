@@ -84,5 +84,14 @@ menu {
 }
 .mainMenu  li:first-child {
     margin-left: 0rem;
+}
 
+[data-component="slideshow"] .slide {
+    display: none;
+    text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+    display: block;
+}
 }
