@@ -1,0 +1,53 @@
+img
+  display: block
+  margin-left: auto
+  margin-right: auto
+  width: 50%
+menu
+  >li
+    display: inline
+  margin-left: 1rem
+  &: first-child
+  margin-left: 0rem
+
+  a
+    color: red
+  .wrapper
+    display: grid
+    grid-gap: 1em
+    grid-template-rows: [row] auto
+    background-color: #fff
+    color: #444
+    margin-left: auto
+    margin-right: auto
+
+    .mainContent
+      grid-column: col / span 3
+      grid-row: row 2
+.box
+  background-color: #444
+  color: #fff
+  border-radius: 5px
+.header
+  grid-row: row 1
+  grid-column: col 1
+.heroImage
+  grid-row: 2
+  grid-column: col 1 / span 2
+.z-boxes
+  display: grid
+  grid-row: 3
+  height: 400px
+  align-content: space-evenly
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+  grid-gap: 1rem
+  >div
+    grid-auto-columns: auto
+  box-shadow: 2px 2px 5px black
+  &: nth-child(odd)
+  background-color: #ddd
+.sidebar
+  grid-column: col 4
+  grid-row: row 2
+.footer
+  grid-row: row 4
